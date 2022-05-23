@@ -143,7 +143,20 @@ Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
 If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell ).
 */
 ///////////////////////////////////////////////////////////
-function sumOfDifferences(arr) {
-  return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
-}
+// function sumOfDifferences(arr) {
+//   return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+// }
 ///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 7///////////////////
+/*
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" --> 1234
+"605"  --> 605
+"1405" --> 1405
+"-7" --> -7
+*/
