@@ -204,3 +204,27 @@ Create a function that will correct the passenger names input making the first l
 // fixName("kEshab");
 // fixName("raShil");
 ///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 10///////////////////
+/*
+Get the sum of two arrays...actually the sum of all their elements.
+*/
+///////////////////////////////////////////////////////////
+
+// function arrayPlusArray(arr1, arr2) {
+//   let arr = [...arr1, ...arr2];
+//   console.log(arr);
+//   return arr.reduce((a, b) => a + b);
+// }
+
+///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 11///////////////////
+
+/*
+You are given two interior angles (in degrees) of a triangle.
+
+Write a function to return the 3rd.
+
+Note: only positive integers will be tested.
+*/
