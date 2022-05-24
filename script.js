@@ -175,15 +175,24 @@ Note: B and E are the middle seats
 */
 
 ///////////////////////////////////////////////////////////
-const checkMiddleSeat = (seat) => {
-  const s = seat.slice(-1);
-  if (s === "B" || s === "E") {
-    console.log("You got the middle seat");
-  } else {
-    console.log("Sorry! You havenot got the middle seat");
-  }
-};
-checkMiddleSeat("11B");
-checkMiddleSeat("21C");
-checkMiddleSeat("43E");
+// const checkMiddleSeat = (seat) => {
+//   const s = seat.slice(-1);
+//   if (s === "B" || s === "E") {
+//     console.log("You got the middle seat");
+//   } else {
+//     console.log("Sorry! You havenot got the middle seat");
+//   }
+// };
+// checkMiddleSeat("11B");
+// checkMiddleSeat("21C");
+// checkMiddleSeat("43E");
+///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 9///////////////////
+/*
+Create a function that will correct the passenger names input making the first letter capital and then rest of the characters in the names to lower case
+*/
+
+///////////////////////////////////////////////////////////
+
 ///////////////////////////////////////////////////////////
