@@ -195,4 +195,12 @@ Create a function that will correct the passenger names input making the first l
 
 ///////////////////////////////////////////////////////////
 
+// const name = "kEsHab";
+const fixName = (name) => {
+  const lowerName = name.toLowerCase();
+  const fixedName = lowerName[0].toUpperCase() + lowerName.slice(1);
+  console.log(fixedName);
+};
+fixName("kEshab");
+fixName("raShil");
 ///////////////////////////////////////////////////////////
