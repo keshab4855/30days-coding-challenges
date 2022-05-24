@@ -175,5 +175,15 @@ Note: B and E are the middle seats
 */
 
 ///////////////////////////////////////////////////////////
-
+const checkMiddleSeat = (seat) => {
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") {
+    console.log("You got the middle seat");
+  } else {
+    console.log("Sorry! You havenot got the middle seat");
+  }
+};
+checkMiddleSeat("11B");
+checkMiddleSeat("21C");
+checkMiddleSeat("43E");
 ///////////////////////////////////////////////////////////
