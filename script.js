@@ -229,7 +229,32 @@ Write a function to return the 3rd.
 Note: only positive integers will be tested.
 */
 ///////////////////////////////////////////////////////////
-function otherAngle(a, b) {
-  return 180 - (a + b);
-}
+// function otherAngle(a, b) {
+//   return 180 - (a + b);
+// }
 ///////////////////////////////////////////////////////////
+
+// const person = {
+//   firstName: "keshab",
+//   lastName: "Roka",
+//   fullName() {
+//     return `${person.firstName} ${person.lastName}`;
+//   },
+// };
+
+// console.log(person.fullName());
+
+///////////////CHALLENGE 11///////////////////
+
+/*
+Your task is to sum the differences between consecutive pairs in the array in descending order.
+
+Example
+[2, 1, 10]  -->  9
+In descending order: [10, 2, 1]
+
+Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+
+If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell ).
+
+ */
