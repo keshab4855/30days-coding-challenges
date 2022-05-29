@@ -271,7 +271,19 @@ Return the type of the sum of the two arguments
  */
 
 ///////////////////////////////////////////////////////////
-function typeOfSum(a, b) {
-  return typeof (a + b);
-}
+// function typeOfSum(a, b) {
+//   return typeof (a + b);
+// }
 ///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 13///////////////////
+/*
+Create a table of 5 from 1 to 10
+*/
+function multiTable(number) {
+  for (let i = 1; i < 11; i++) {
+    console.log(`${i} * ${number} = ${number * i} `);
+  }
+  return;
+}
+multiTable(5);
