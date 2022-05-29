@@ -309,25 +309,46 @@ Otherwise returns "Wrong, please enter a number between 1 and 7"
 
 ///////////////////////////////////////////////////////////
 
-function whatday(num) {
-  switch (num) {
-    case 1:
-      return "Sunday";
-    case 2:
-      return "Monday";
-    case 3:
-      return "Tuesday";
-    case 4:
-      return "Wednesday";
-    case 5:
-      return "Thursday";
-    case 6:
-      return "Friday";
-    case 7:
-      return "Saturday";
-    default:
-      return "Wrong, please enter a number between 1 and 7";
+// function whatday(num) {
+//   switch (num) {
+//     case 1:
+//       return "Sunday";
+//     case 2:
+//       return "Monday";
+//     case 3:
+//       return "Tuesday";
+//     case 4:
+//       return "Wednesday";
+//     case 5:
+//       return "Thursday";
+//     case 6:
+//       return "Friday";
+//     case 7:
+//       return "Saturday";
+//     default:
+//       return "Wrong, please enter a number between 1 and 7";
+//   }
+// }
+// whatday(8);
+///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 15///////////////////
+
+/*
+Write function typeValidation that will accept two parameters: variable and type and check if type of variable is matching type. Return true if types match or false if not.
+
+Examples:
+typeValidation(42, "number");   // => true
+typeValidation("42", "number"); // => false
+ */
+///////////////////////////////////////////////////////////
+
+function typeValidation(variable, type) {
+  if (typeof variable === type) {
+    return true;
+  } else {
+    return false;
   }
 }
-whatday(8);
+console.log(typeValidation("9", "number"));
 ///////////////////////////////////////////////////////////
