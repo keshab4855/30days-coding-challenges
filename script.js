@@ -471,23 +471,48 @@ Examples
 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 */
 ///////////////////////////////////////////////////////////
-function digital_root(n) {
-  let sum = 0;
-  while (n > 0 || sum > 9) {
-    if (n == 0) {
-      n = sum;
-      sum = 0;
-    } else {
-      sum = sum + (n % 10);
-      // console.log(`calculating sum: ${sum}`);
-      n = Math.floor(n / 10);
-      // console.log(`calculating n: ${n}`);
-    }
-  }
-  return `final sum: ${sum}`;
-}
-console.log(digital_root(222));
-console.log(digital_root(2));
-console.log(digital_root(4214));
+// function digital_root(n) {
+//   let sum = 0;
+//   while (n > 0 || sum > 9) {
+//     if (n == 0) {
+//       n = sum;
+//       sum = 0;
+//     } else {
+//       sum = sum + (n % 10);
+//       // console.log(`calculating sum: ${sum}`);
+//       n = Math.floor(n / 10);
+//       // console.log(`calculating n: ${n}`);
+//     }
+//   }
+//   return `final sum: ${sum}`;
+// }
+// console.log(digital_root(222));
+// console.log(digital_root(2));
+// console.log(digital_root(4214));
 
+///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 22///////////////////
+
+/*
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 42145 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 123456789 Output: 987654321
+*/
+
+///////////////////////////////////////////////////////////
+
+function descendingOrder(n) {
+  let strNumber = n.toString();
+  let inputNumber = Array.from(strNumber, Number);
+  let arr = inputNumber.sort().reverse();
+  return Number(arr.join(""));
+  console.log();
+}
+descendingOrder(234);
 ///////////////////////////////////////////////////////////
