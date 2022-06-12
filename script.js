@@ -524,9 +524,21 @@ Write a function that takes an integer as input, and returns the number of bits 
 Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
 */
 ///////////////////////////////////////////////////////////
-var countBits = function (n) {
-  let binNumber = Array.from(n.toString(2), Number);
-  return eval(binNumber);
-};
-countBits(1234);
+// var countBits = function (n) {
+//   let binNumber = Array.from(n.toString(2), Number);
+//   return eval(binNumber);
+// };
+// countBits(1234);
+///////////////////////////////////////////////////////////
+
+/*
+Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
+
+// to_binary(1)  /* should return 1 */
+// to_binary(5)  /* should return 101 */
+// to_binary(11) /* should return 1011 */
+///////////////////////////////////////////////////////////
+function toBinary(n) {
+  return Math.abs(n.toString(2));
+}
 ///////////////////////////////////////////////////////////
