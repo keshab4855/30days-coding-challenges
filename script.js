@@ -531,6 +531,7 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 // countBits(1234);
 ///////////////////////////////////////////////////////////
 
+///////////////CHALLENGE 23///////////////////
 /*
 Given a non-negative integer n, write a function to_binary/ToBinary which returns that number in a binary format.
 
@@ -538,7 +539,26 @@ Given a non-negative integer n, write a function to_binary/ToBinary which return
 // to_binary(5)  /* should return 101 */
 // to_binary(11) /* should return 1011 */
 ///////////////////////////////////////////////////////////
-function toBinary(n) {
-  return Math.abs(n.toString(2));
+// function toBinary(n) {
+//   return Math.abs(n.toString(2));
+// }
+///////////////////////////////////////////////////////////
+
+///////////////CHALLENGE 24///////////////////
+
+/*
+Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+
+Example: (Input1, Input2 -->Output)
+
+"4",  "5" --> "9"
+"34", "5" --> "39"
+"", "" --> "0"
+"2", "" --> "2"
+"-5", "3" --> "-2"
+ */
+///////////////////////////////////////////////////////////
+function sumStr(a, b) {
+  return (Number(a) + Number(b)).toString();
 }
 ///////////////////////////////////////////////////////////
